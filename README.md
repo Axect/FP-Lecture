@@ -1,6 +1,6 @@
 # FP Lecture
 
-** Axect **
+**Axect**
 
 ## Pre-requisites
 
