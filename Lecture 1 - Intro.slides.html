@@ -11772,22 +11772,28 @@ ul.typeahead-list > li > a {
     </style>
 <style type="text/css">
     @font-face {
- font-family: "Fira Mono";
+ font-family: "Fira Code";
  font-weight: normal;
  font-style: normal;
- src: local('"Fira Mono"'), url('fonts/fira.ttf') format('truetype');
+ src: local('"Fira Code"'), url('fonts/firacode.otf') format('opentype');
+}
+@font-face {
+ font-family: "Georgia";
+ font-weight: normal;
+ font-style: normal;
+ src: local('"Georgia"'), url('fonts/georgia.ttf') format('truetype');
 }
 div#notebook {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  line-height: 170%;
  color: #303030;
  -webkit-font-smoothing: antialiased !important;
 }
 body,
 div.body {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  color: #303030;
  background-color: #ffffff;
  background: #ffffff;
@@ -11801,7 +11807,7 @@ body.notebook_app {
  overflow-y: hidden;
 }
 a {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  color: #303030;
  -webkit-font-smoothing: antialiased !important;
 }
@@ -11943,7 +11949,7 @@ span#sort-name.btn.btn-xs.btn-default.sort-action:hover .fa {
  font-size: 18px;
 }
 div#notebook_toolbar div.dynamic-instructions {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 17px;
  color: #828892;
 }
@@ -12003,14 +12009,14 @@ body > #header {
  z-index: 100;
 }
 .list_container {
- font-size: 13pt;
+ font-size: 12pt;
  color: #303030;
  border: none;
  text-shadow: none !important;
 }
 .list_container > div {
  border-bottom: 1px solid rgba(180,180,180,.14);
- font-size: 13pt;
+ font-size: 12pt;
 }
 .list_header > div,
 .list_item > div {
@@ -12023,7 +12029,7 @@ body > #header {
  margin-left: -1px;
  vertical-align: middle;
  line-height: 22px;
- font-size: 13pt;
+ font-size: 12pt;
 }
 .item_icon {
  color: #126dce;
@@ -12069,7 +12075,7 @@ body > #header {
 }
 button#tree-selector-btn {
  height: 34px;
- font-size: 12.0pt;
+ font-size: 11.0pt;
  border: none;
  left: 0px;
  border-radius: 0px !important;
@@ -12115,7 +12121,7 @@ div.list_item:hover {
  background-color: #fafafa;
 }
 .breadcrumb > li {
- font-size: 12.0pt;
+ font-size: 11.0pt;
  color: #303030;
  border: none;
  text-shadow: none !important;
@@ -12134,14 +12140,14 @@ div.list_item:hover {
  margin-top: -2px;
 }
 ul#tabs a {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 13.5pt;
  font-weight: normal;
  font-style: normal;
  text-shadow: none !important;
 }
 .nav-tabs {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 13.5pt;
  font-weight: normal;
  font-style: normal;
@@ -12202,8 +12208,8 @@ ul#tabs a {
  -webkit-font-smoothing: subpixel-antialiased !important;
 }
 div#notebook {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  padding-top: 4px;
 }
 .notebook_app {
@@ -12245,8 +12251,8 @@ div#header-container {
 }
 #header,
 .edit_app #header {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  box-shadow: none;
  background-color: #ffffff;
 }
@@ -12287,16 +12293,16 @@ p.navbar-text.indicator_area {
  color: #ff7823;
 }
 .navbar-default {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  background-color: #ffffff;
  border-color: #d4d4d4;
  line-height: 1.5em;
  padding-bottom: 0px;
 }
 .navbar-default .navbar-nav > li > a {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  color: #303030;
  display: block;
  line-height: 1.5em;
@@ -12392,7 +12398,7 @@ div.notification_widget.info,
  margin-bottom: 0px;
 }
 .command_mode .modal_indicator:before {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 18px;
  color: #ff7823;
  padding-bottom: 0px;
@@ -12404,7 +12410,7 @@ div.notification_widget.info,
  color: #126dce;
 }
 .item_buttons .kernel-name {
- font-size: 13pt;
+ font-size: 12pt;
  color: #126dce;
 }
 .running_notebook_icon:before {
@@ -12422,12 +12428,12 @@ div.notification_widget.info,
 .item_buttons .running-indicator {
  padding-top: 4px;
  color: #009e07;
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  text-rendering: auto;
  -webkit-font-smoothing: antialiased;
 }
 #notification_trusted {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 17px !important;
  color: #126dce;
  border: none;
@@ -12562,14 +12568,14 @@ i.fa.fa-icon {
 }
 .fa {
  display: inline-block;
- font: normal normal normal 10pt/1 "FontAwesome", sans-serif;
+ font: normal normal normal 10pt/1 "FontAwesome", "Georgia", serif;
  text-rendering: auto;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
 }
 .dropdown-menu {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  box-shadow: none;
  padding: 0px;
  text-align: left;
@@ -12579,8 +12585,8 @@ i.fa.fa-icon {
  line-height: 1;
 }
 .dropdown-menu:hover {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  box-shadow: none;
  padding: 0px;
  text-align: left;
@@ -12590,8 +12596,8 @@ i.fa.fa-icon {
  line-height: 1;
 }
 .dropdown-menu > li > a {
- font-family: sans-serif;
- font-size: 12.0pt;
+ font-family: "Georgia", serif;
+ font-size: 11.0pt;
  display: block;
  padding: 10px 20px 9px 10px;
  color: #303030;
@@ -12624,8 +12630,8 @@ i.fa.fa-icon {
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
- font-family: sans-serif;
- font-size: 12.0pt;
+ font-family: "Georgia", serif;
+ font-size: 11.0pt;
  font-weight: normal;
  color: #828892;
  padding: none;
@@ -12654,7 +12660,7 @@ div.kse-dropdown > .dropdown-menu,
 }
 .btn,
 .btn-default {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  color: #303030;
  background: #e5e5e5;
  background-color: #e5e5e5;
@@ -12739,7 +12745,7 @@ div.kse-dropdown > .dropdown-menu,
 .item_buttons > .btn,
 .item_buttons > .btn-group,
 .item_buttons > .input-group {
- font-size: 13pt;
+ font-size: 12pt;
  background: transparent;
  background-color: transparent;
  border: 0px solid #e4e4e4;
@@ -12861,8 +12867,8 @@ div.dynamic-buttons > button,
  z-index: 2;
 }
 .dropdown-header {
- font-family: sans-serif !important;
- font-size: 13pt !important;
+ font-family: "Georgia", serif !important;
+ font-size: 12pt !important;
  color: #ff7823 !important;
  border-bottom: none !important;
  padding: 0px !important;
@@ -12870,7 +12876,7 @@ div.dynamic-buttons > button,
 }
 span#last-modified.btn.btn-xs.btn-default.sort-action,
 span#sort-name.btn.btn-xs.btn-default.sort-action {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 16px;
  background-color: transparent;
  background: transparent;
@@ -12925,7 +12931,7 @@ fieldset[disabled] .btn-default.focus {
 }
 .input-group-addon {
  padding: 2px 5px;
- font-size: 13pt;
+ font-size: 12pt;
  font-weight: normal;
  height: auto;
  color: #303030;
@@ -13004,8 +13010,8 @@ div.modal-footer > button:hover {
  transition: 200ms ease;
 }
 .modal-content {
- font-family: sans-serif;
- font-size: 12.0pt;
+ font-family: "Georgia", serif;
+ font-size: 11.0pt;
  position: relative;
  background: #e4e4e4;
  background-color: #e4e4e4;
@@ -13015,8 +13021,8 @@ div.modal-footer > button:hover {
  outline: none;
 }
 .modal-header {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  color: #303030;
  background: #e4e4e4;
  background-color: #e4e4e4;
@@ -13025,7 +13031,7 @@ div.modal-footer > button:hover {
  min-height: 16.4286px;
 }
 .modal-content h4 {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 16pt;
  color: #303030;
  padding: 5px;
@@ -13059,8 +13065,8 @@ div.panel,
 div.panel-default,
 .panel,
 .panel-default {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  background-color: #f4f4f4;
  color: #303030;
  margin-bottom: 14px;
@@ -13087,7 +13093,7 @@ div.container-fluid {
 }
 div.form-control,
 .form-control {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: initial;
  color: #303030;
  background-color: #ffffff;
@@ -13119,7 +13125,7 @@ textarea {
 }
 select.form-control.select-xs {
  height: 33px;
- font-size: 13pt;
+ font-size: 12pt;
 }
 .toolbar select,
 .toolbar label {
@@ -13338,7 +13344,7 @@ div.cell.text_cell.selected.jupyter-soft-selected {
 }
 div.prompt,
 .prompt {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  font-size: 9pt !important;
  font-weight: normal;
  color: #828892;
@@ -13385,7 +13391,7 @@ div.output_wrapper {
 }
 div.output_subarea.output_text.output_stream.output_stdout,
 div.output_subarea.output_text {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  font-size: 8.5pt !important;
  line-height: 150% !important;
  background-color: #ffffff;
@@ -13394,7 +13400,7 @@ div.output_subarea.output_text {
  border-top-left-radius: 0px;
 }
 div.output_area pre {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  font-size: 8.5pt !important;
  line-height: 151% !important;
  color: #303030;
@@ -13405,7 +13411,7 @@ div.output_area {
  display: -webkit-box;
 }
 div.output_html {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  font-size: 8.5pt;
  color: #353535;
  background-color: #ffffff;
@@ -13430,7 +13436,7 @@ div.btn.btn-default.output_collapsed:hover {
  border-color: #d2d2d2;
 }
 div.prompt.output_prompt {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  font-size: 9.5pt !important;
  font-weight: bold !important;
  background-color: #ffffff;
@@ -13444,7 +13450,7 @@ div.prompt.output_prompt {
  border-right: 2px solid transparent;
 }
 div.out_prompt_overlay.prompt {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  font-size: 9.5pt !important;
  font-weight: bold !important;
  background-color: #ffffff;
@@ -13560,7 +13566,7 @@ div.cell.text_cell .prompt {
  border-right: 0;
 }
 div.cell.text_cell.rendered .prompt {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  font-size: 9.5pt;
  font-weight: normal;
  color: #828892 !important;
@@ -13572,7 +13578,7 @@ div.cell.text_cell.rendered .prompt {
  border-left: 5px solid #ffffff;
 }
 div.cell.text_cell.unrendered .prompt {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  font-size: 9.5pt;
  font-weight: normal;
  color: #828892 !important;
@@ -13597,8 +13603,8 @@ div.text_cell.unrendered.selected .prompt {
  border-right: 2px solid transparent;
 }
 div.rendered_html code {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt;
  padding-top: 3px;
  padding-left: 2px;
  color: #303030;
@@ -13613,8 +13619,8 @@ samp {
 }
 .well code,
 code {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt !important;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt !important;
  line-height: 170% !important;
  color: #353535;
  background: #efefef;
@@ -13623,7 +13629,7 @@ code {
 }
 kbd {
  padding: 1px;
- font-size: 11pt;
+ font-size: 11.5pt;
  font-weight: 800;
  color: #303030;
  background-color: transparent !important;
@@ -13634,7 +13640,7 @@ pre {
  display: block;
  padding: 8.5px;
  margin: 0 0 9px;
- font-size: 12.0pt;
+ font-size: 11.0pt;
  line-height: 1.42857143;
  color: #303030;
  background-color: #efefef;
@@ -13653,8 +13659,8 @@ div.rendered_html {
  margin-bottom: .5em;
 }
 div.rendered_html pre {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt !important;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt !important;
  line-height: 170% !important;
  color: #353535;
  background: #efefef;
@@ -13669,8 +13675,8 @@ div.rendered_html pre {
 }
 div.text_cell_render pre,
 div.text_cell_render code {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt !important;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt !important;
  line-height: 170% !important;
  color: #353535;
  background: #ffffff;
@@ -13696,7 +13702,7 @@ div.text_cell_render h4,
 div.rendered_html h4,
 div.text_cell_render h5,
 div.rendered_html h5 {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  margin: 0.4em .2em .3em .2em !important;
 }
 .rendered_html h1:first-child,
@@ -13784,11 +13790,11 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
  border: none;
 }
 .rendered_html td {
- font-family: sans-serif !important;
+ font-family: "Georgia", serif !important;
  font-size: 9.3pt;
 }
 .rendered_html table {
- font-family: sans-serif !important;
+ font-family: "Georgia", serif !important;
  margin-left: 8px;
  margin-right: auto;
  border: none;
@@ -13798,7 +13804,7 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
  table-layout: fixed;
 }
 .rendered_html thead {
- font-family: sans-serif !important;
+ font-family: "Georgia", serif !important;
  font-size: 10.3pt !important;
  background: #ebebeb;
  color: #353535;
@@ -13826,8 +13832,8 @@ div.widget-area {
  color: #303030;
 }
 div.widget-area a {
- font-family: sans-serif;
- font-size: 12.0pt;
+ font-family: "Georgia", serif;
+ font-size: 11.0pt;
  font-weight: normal;
  font-style: normal;
  color: #303030;
@@ -13835,8 +13841,8 @@ div.widget-area a {
 }
 div.widget-area a:hover,
 div.widget-area a:focus {
- font-family: sans-serif;
- font-size: 12.0pt;
+ font-family: "Georgia", serif;
+ font-size: 11.0pt;
  font-weight: normal;
  font-style: normal;
  color: #2f2f2f;
@@ -13907,7 +13913,7 @@ div.widget-label {
  margin-left: 12px;
 }
 .rendered_html :link {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 100%;
  color: #ff7823;
  text-decoration: underline;
@@ -13919,7 +13925,7 @@ div.widget-label {
 }
 .rendered_html :visited:hover,
 .rendered_html :link:hover {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 100%;
  color: #f96000;
 }
@@ -13962,7 +13968,7 @@ div#nbextensions-configurator-container.container,
  margin-left: auto;
 }
 div.nbext-selector > nav > .nav > li > a {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 10.5pt;
  padding: 2px 5px;
 }
@@ -13988,7 +13994,7 @@ div.nbext-selector > nav > .nav > li.active:hover {
  -webkit-font-smoothing: subpixel-antialiased !important;
 }
 div.nbext-readme > .nbext-readme-contents > .rendered_html {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 11.5pt;
  line-height: 145%;
  padding: 1em 1em;
@@ -14116,13 +14122,13 @@ span.bg-danger.text-danger {
  box-shadow: inset 0 1px 1px rgba(0,0,0,0.025);
 }
 .kse-input-group-pretty > kbd {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  color: #303030;
  font-weight: normal;
  background: transparent;
 }
 .kse-input-group-pretty > kbd {
- font-family: "Fira Mono", monospace, monospace;
+ font-family: "Fira Code", monospace, monospace;
  color: #303030;
  font-weight: normal;
  background: transparent;
@@ -14236,7 +14242,7 @@ div.collapsible_headings_toggle .fa-caret-right:before {
 #navigate_menu a,
 .toc {
  color: #303030 !important;
- font-size: 11pt !important;
+ font-size: 11.5pt !important;
 }
 #toc li > span:hover {
  background-color: #d4d4d4 !important;
@@ -14245,15 +14251,15 @@ div.collapsible_headings_toggle .fa-caret-right:before {
 #navigate_menu a:hover,
 .toc {
  color: #1c1c1c !important;
- font-size: 11pt !important;
+ font-size: 11.5pt !important;
 }
 #toc-wrapper .toc-item-num {
  color: #ff7823 !important;
- font-size: 11pt !important;
+ font-size: 11.5pt !important;
 }
 input.raw_input {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt !important;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt !important;
  color: #303030;
  background-color: #efefef;
  border-color: #ececec;
@@ -14287,7 +14293,7 @@ video {
  z-index: 1;
 }
 .typeahead-field input {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  color: #303030;
  border: none;
  font-size: 28pt;
@@ -14305,7 +14311,7 @@ body > div.modal.cmd-palette.typeahead-field {
  background-color: #f4f4f4;
 }
 .typeahead-container button {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-size: 28pt;
  background-color: #e4e4e4;
  border: none;
@@ -14340,8 +14346,8 @@ body > div.modal.cmd-palette.typeahead-field {
 }
 .typeahead-dropdown,
 .typeahead-list {
- font-family: sans-serif;
- font-size: 13pt;
+ font-family: "Georgia", serif;
+ font-size: 12pt;
  color: #303030;
  background-color: #ffffff;
  border: none;
@@ -14485,8 +14491,8 @@ div#short-key-bindings-intro.well,
  background: #ffffff;
 }
 .terminal-app .terminal {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt;
  line-height: 170%;
  color: #303030;
  background: #ededed;
@@ -14601,8 +14607,8 @@ div#pager .ui-resizable-handle {
 }
 div.CodeMirror,
 div.CodeMirror pre {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt;
  line-height: 170%;
  color: #303030;
 }
@@ -14663,8 +14669,8 @@ div.js-error {
  color: #de143d;
 }
 .ipython_tooltip {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt;
  line-height: 170%;
  border: 2px solid #dadada;
  background: #eeeeee;
@@ -14677,8 +14683,8 @@ div.js-error {
  z-index: 1000;
 }
 .ipython_tooltip .tooltiptext pre {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt;
  line-height: 170%;
  background: #eeeeee;
  background-color: #eeeeee;
@@ -14699,8 +14705,8 @@ div.tooltiptext.bigtooltip {
  max-width: 800px;
 }
 .cm-s-ipython.CodeMirror {
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt;
  background: #ededed;
  color: #303030;
  border-radius: 2px;
@@ -14836,7 +14842,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
  color: #055be0;
 }
 div.cell.text_cell .cm-s-default .cm-header {
- font-family: sans-serif;
+ font-family: "Georgia", serif;
  font-weight: normal;
  color: #126dce;
  margin-top: 0.3em !important;
@@ -14922,27 +14928,16 @@ body :focus .MathJax {
  margin: 0px;
  margin-left: 2px;
  overflow: auto;
- font-family: "Fira Mono", monospace, monospace;
- font-size: 11pt;
+ font-family: "Fira Code", monospace, monospace;
+ font-size: 11.5pt;
  color: #303030;
  width: auto;
 }
 div#maintoolbar {
  display: none !important;
 }
-span.save_widget span.filename {
- margin-left: 8px;
- font-size: 120%;
- color: #e5e5e5;
- background-color: #ededed;
-}
-span.save_widget span.filename:hover {
- color: #828892;
- background-color: #ededed;
-}
-#menubar {
- padding-top: 4px;
- background-color: #ffffff;
+#header-container {
+ display: none !important;
 }
 
 <script>
@@ -16121,37 +16116,6 @@ $$\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h}$$</p>
 </div>
 </div>
 </div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-Haskell">1. Haskell<a class="anchor-link" href="#1.-Haskell">&#182;</a></h3><hr>
-<p><img src="Pictures/logos/haskell.png" alt="haskell"></p>
-
-</div>
-</div>
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="1.-Haskell">1. Haskell<a class="anchor-link" href="#1.-Haskell">&#182;</a></h3><hr>
-<ul>
-<li>1930년대에 Alonzo Church 가 Lambda Calculus를 발명한 후로 수 없이 많은 함수형 프로그래밍 언어들이 난립</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>*</p>
-
-</div>
-</div>
-</div><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
